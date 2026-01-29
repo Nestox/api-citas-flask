@@ -10,7 +10,7 @@ import pymongo
 
 
 MONGO_URI = os.environ.get("MONGODB_URI", "mongodb://localhost:27017/")
-DB_NAME = os.environ.get("MONGODB_DB", "Clinica") 
+DB_NAME = os.environ.get("MONGODB_DB", "Clinica")
 
 
 def ensure_collections(db: pymongo.database.Database, names: Iterable[str]) -> None:
